@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Smart Expense Tracker</title>
+        <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&family=Dancing+Script&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="MainDiv">
+            <div id="secondMainDiv">
+            <header>
+                <div class="ribbon"></div>
+                <p>Budget Sheet</p>
+            </header>
+            <section class = "TableContainer">
+                <span class="btn-container">
+                <button id="add" onclick="addExpense()">Add Expense</button>
+                <button id="clear" onclick="cleartable()">Clear</button>
+                <label class="total">Total Amount<input id="totalvalue"></label>
+                </span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>DESCRIPTION</th>
+                            <th>+/-AMOUNT</th>
+                            <th>BALANCE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TableSub">
+                    </tbody>
+                </table>
+            </section>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
